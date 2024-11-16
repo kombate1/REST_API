@@ -1,0 +1,14 @@
+{
+  "name": "rest_api",
+  "version": "1.0.0",
+  "description": "Api for use data",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Bikinan Kombate",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
