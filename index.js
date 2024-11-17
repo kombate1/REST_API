@@ -51,10 +51,10 @@ app.get('/users/:id', (req, res) => {
       try {
         const users = JSON.parse(data);
         const { profession } = req.params;
-        const user_proffession = Object.values(users).filter(user_proffession => user_proffession.profession.toLowerCase() === profession.toLowerCase());
+        const user_profession = Object.values(users).filter(user_profession => user_profession.profession.toLowerCase() === profession.toLowerCase());
   
-        if (user_proffession>0) {
-          res.json(user_proffession);
+        if (user_profession.length>0) {
+          res.json(user_profession);
         } else {
           res.status(404).send('User not found');
         }
@@ -77,7 +77,7 @@ app.get('/users/:id', (req, res) => {
         const { name } = req.params;
         const user_name = Object.values(users).filter(user_name => user_name.name.toLowerCase() === name.toLowerCase());
   
-        if (user_name>0) {  //need to check if there is a user name(greater than 0) before this can be evaluated as true
+        if (user_name) {  //need to check if there is a user name(greater than 0) before this can be evaluated as true
           res.json(user_name);
         } else {
           res.status(404).send('User not found');
