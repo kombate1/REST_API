@@ -1,0 +1,2 @@
+Project Overview: This project is a Node.js application built using Express to retrieve user data from a JSON file through a RESTful API. The main objectives of the project were to practice using the fs module for reading JSON files, creating and testing Express routes, and building a REST API. I learned how to parse a json fill into Express and how to retrieve data using various endpoints.
+Testing Screenshots:
